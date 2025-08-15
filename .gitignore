@@ -1,19 +1,62 @@
-# Ignorer tous les fichiers FASTQ compressés
+########################################
+# BIOINFORMATICS DATA FILES (large raw)
+########################################
+# FASTQ / sequencing reads
 data/fastq/*.fastq.gz
+*.fastq
+*.fastq.gz
 
-# Ignorer les fichiers intermédiaires et temporaires
+# Alignment files
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+
+# Quantification & counts
+*.counts
+*.htseq
+*.featureCounts
+
+# Intermediate processing files
+*.fq
+*.fq.gz
 *.tmp
 *.temp
-*.log
-*.bak
 
-# Ignorer les résultats de pipeline
+########################################
+# PIPELINE OUTPUT / RESULTS
+########################################
 results/
 output/
+analysis/
+reports/
 
-# Ignorer les fichiers générés par Jupyter
+########################################
+# JUPYTER / NOTEBOOK
+########################################
 .ipynb_checkpoints/
+*.ipynb~
 
-# Ignorer les fichiers système
+########################################
+# LOGS & MISC
+########################################
+*.log
+*.bak
+*.swp
+*.swo
+
+########################################
+# SYSTEM FILES
+########################################
 .DS_Store
 Thumbs.db
+desktop.ini
+
+########################################
+# PYTHON ENVIRONMENTS
+########################################
+venv/
+.env/
+__pycache__/
+*.pyc
