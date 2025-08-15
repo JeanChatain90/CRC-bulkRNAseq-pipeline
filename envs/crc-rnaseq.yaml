@@ -1,0 +1,40 @@
+name: crc-rnaseq
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+channel_priority: strict
+dependencies:
+  - python=3.11
+  - pip
+
+  # Orchestration
+  - snakemake-minimal
+
+  # Core CLI utils
+  - aria2
+  - wget
+  - curl
+  - pigz
+  - parallel
+  - coreutils
+  - gawk
+
+  # NGS tools
+  - fastqc
+  - multiqc
+  - sra-tools
+  - entrez-direct
+  - samtools
+  - hisat2
+  - star
+  - subread            # (featureCounts)
+  - salmon
+
+  # R + Bioconductor (R 4.3 / BioC 3.18)
+  - r-base>=4.3,<4.4
+  - r-tidyverse
+  - r-optparse
+  - bioconductor-deseq2
+  - bioconductor-apeglm
+  - bioconductor-tximport
