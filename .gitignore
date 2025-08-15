@@ -28,6 +28,8 @@ data/fastq/*.fastq.gz
 # PIPELINE OUTPUT / RESULTS
 ########################################
 results/
+!results/multiqc/
+!results/multiqc/multiqc_fastqc.html
 output/
 analysis/
 reports/
