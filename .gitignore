@@ -1,1 +1,19 @@
+# Ignorer tous les fichiers FASTQ compressés
+data/fastq/*.fastq.gz
 
+# Ignorer les fichiers intermédiaires et temporaires
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Ignorer les résultats de pipeline
+results/
+output/
+
+# Ignorer les fichiers générés par Jupyter
+.ipynb_checkpoints/
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
