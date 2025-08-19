@@ -1,0 +1,10 @@
+=== Résumé SRP010181 (Tue Aug 19 07:32:53 CEST 2025) ===
+--- Par RUN ---
+Normal  : 260
+Tumor   : 260
+Unknown : 1
+
+--- Par SAMPLE ---
+Normal  : 65
+Tumor   : 65
+Unknown : 1
