@@ -30,6 +30,8 @@ data/fastq/*.fastq.gz
 results/
 !results/multiqc/
 !results/multiqc/multiqc_fastqc.html
+!results/star/
+!results/star/star_alignment_summary.tsv
 output/
 analysis/
 reports/
