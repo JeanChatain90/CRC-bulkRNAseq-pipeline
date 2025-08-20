@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#
 set -euo pipefail
 
 # Dossiers du projet (adapte si besoin)

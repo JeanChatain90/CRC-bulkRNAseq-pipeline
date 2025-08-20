@@ -6,6 +6,7 @@
 #   --logs  = <racine_du_projet>/results/star
 #   --out   = <racine_du_projet>/results/multiqc
 #   --name  = multiqc_star.html
+#
 
 set -euo pipefail
 
