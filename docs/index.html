@@ -1,14 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Rapports MultiQC</title>
+  <meta charset="utf-8" />
+  <title>CRC bulk RNA-seq – Rapports</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    h1 { margin-bottom: .5rem; }
+    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); margin-top: 1rem; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; }
+    .card a { text-decoration: none; font-weight: 600; }
+    .muted { color:#666; font-size:.95rem; margin-top:.25rem; }
+  </style>
 </head>
 <body>
-  <h1>Rapports MultiQC</h1>
-  <ul>
-    <li><a href="multiqc_fastq.html">FASTQ (qualité initiale)</a></li>
-    <li><a href="multiqc_star.html">STAR (alignements)</a></li>
-  </ul>
+  <h1>CRC bulk RNA-seq – Rapports MultiQC</h1>
+  <p>Accédez aux rapports interactifs :</p>
+  <div class="cards">
+    <div class="card">
+      <a href="fastq.html">Qualité des lectures (FASTQ)</a>
+      <div class="muted">Synthèse MultiQC des rapports FastQC (qualité, adapters, GC, duplications…)</div>
+    </div>
+    <div class="card">
+      <a href="star.html">Alignements STAR (GRCh38)</a>
+      <div class="muted">Statistiques d’alignement (mapping unique/multiple, non-mappés, longueur moyenne…)</div>
+    </div>
+  </div>
 </body>
 </html>
+EOF
