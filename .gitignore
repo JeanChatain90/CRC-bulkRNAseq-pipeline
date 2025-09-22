@@ -17,6 +17,7 @@ data/fastq/*.fastq.gz
 *.counts
 *.htseq
 *.featureCounts
+*.tsv.gz
 
 # Intermediate processing files
 *.fq
@@ -32,15 +33,26 @@ results/
 !results/multiqc/multiqc_fastqc.html
 !results/star/
 !results/star/star_alignment_summary.tsv
+
 output/
 analysis/
 reports/
+figures/
+
+########################################
+# R FILES
+########################################
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
 
 ########################################
 # JUPYTER / NOTEBOOK
 ########################################
 .ipynb_checkpoints/
 *.ipynb~
+*.nb.html
 
 ########################################
 # LOGS & MISC
@@ -64,3 +76,5 @@ venv/
 .env/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
